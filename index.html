@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web studio</title>
     <link
       rel="stylesheet"
@@ -17,6 +18,7 @@
       rel="stylesheet"
     />
     <meta charset="utf-8" />
+
     <meta name="description" content="Webstudio meta tag content" />
   </head>
 
@@ -53,19 +55,58 @@
             </li>
           </ul>
         </address>
+        <button class="icon-burger js-open-menu" type="button">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-container js-menu-container">
+        <button type="button" class="mobile-close-btn js-close-menu">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+         <nav class="mobile-nav">
+          <ul class="mobile-nav-menu list">
+            <li>
+              <a class="mobile-nav-link link " href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mobile-nav-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+        <address class="mobile-address">
+          <ul class="mobile-adress-item list">
+            <li>
+              <a class="mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              ></li>
+             <li> <a class="mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              ></li>
+          </ul>
+        </address>
+        <!-- тут має бути список соцмереж -->
+      </div>
       </div>
     </header>
-
+    
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions For Your Business</h1>
           <button class="hero-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
       </section>
-      <!-- Features -->
+
       <section class="features">
         <div class="container features-container">
           <h2 class="features-title visually-hidden">Features</h2>
@@ -122,7 +163,7 @@
           </ul>
         </div>
       </section>
-      <!-- About us -->
+           
       <section class="about-us">
         <div class="container our-work">
           <h2 class="about-us-title">What are we doing</h2>
@@ -139,7 +180,7 @@
           </ul>
         </div>
       </section>
-      <!-- Our team -->
+     
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -379,7 +420,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+       <section class="customers">
         <div class="customers-container container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -459,7 +500,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+   <footer class="footer">
       <div class="container footer-container">
         <div class="footer-text-logo">
           <a href="./index.html" class="footer-logo link"
@@ -543,7 +584,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -608,7 +649,14 @@
           <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
